@@ -1,6 +1,6 @@
 package calc;
 
-public class ActionService {
+public class ArithmeticOperation {
 
     public static String calculate(Number first, Number second, String action) throws Exception {
 
@@ -14,7 +14,7 @@ public class ActionService {
 
         if (first.getType() == NumberType.ROMAN) {
             if (result < 1) throw new Exception("В римской системе нет 0 и отрицательных чисел");
-            return NumberService.toRomanNumber(result);
+            return NumberProcessing.toRomanNumber(result);
         } else return String.valueOf(result);
 
     }

@@ -3,7 +3,7 @@ package calc;
 import java.util.Map;
 import java.util.TreeMap;
 
-class NumberService {
+class NumberProcessing {
 
     private final static TreeMap < Integer, String > romanString = new TreeMap<>();
 
